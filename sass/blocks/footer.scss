@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
+
+.footer{
+    background-color: #52503B;
+    height: 608px;
+
+    &__section{
+        display: flex;
+        padding-top: 100px;
+        margin-left: 136px;
+
+        &-descr{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            
+        }
+
+        &-social{
+            width: 136px;
+            margin-left: 238px;
+
+            &_title{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+
+            &_icon{
+                margin-right: 16px;
+            }
+        }
+        &-submit{
+            margin-left: 167px;
+            &_input{
+                width: 576px;
+                padding: 16px 0 16px 30px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #52503B;
+                background: #F9FAFB;
+                border: 1px solid #E5E7EB;
+                border-radius: 8px;
+            
+              }
+
+            &_title{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                
+            }
+    
+            &_descr{
+                width: 563px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                margin-bottom: 9px;
+            }
+
+            &_button{
+                border: 1px solid #52503B;
+                border-radius: 10px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #52503B;
+                position: relative;
+                padding: 5px 5px 5px 5px;
+                position: relative;
+                right: 73px;
+            }
+          
+        }
+    
+           
+        
+    }
+
+    &__logo{
+        width: 200px;
+        height: 70px;
+        margin: 48px 0 20px 620px
+    }
+
+    &__rights{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    &__adres{
+        background-color: #52503B;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 110px;
+    }
+   
+}
+
+li{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+li:hover{
+    text-shadow: 0.1px 0.2px #FFFFFF;
+}
+
+.footer__section-submit_button:hover{
+    background-color: #52503B;
+    color: #FFFFFF;
+}

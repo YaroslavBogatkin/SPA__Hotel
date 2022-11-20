@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
+.advantage {
+  background-color: white;
+}
+.advantage__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  color: #52503B;
+  margin-top: 138px;
+  margin-left: 136px;
+}
+.advantage__descr {
+  width: 554px;
+  margin-top: 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #52503B;
+  margin-left: 136px;
+}
+.advantage__content {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantage__content-items {
+  display: flex;
+  margin-left: 136px;
+  width: 548px;
+  margin-bottom: 50px;
+}
+.advantage__content-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #52503B;
+  margin-left: 16px;
+}
+.advantage__content-descr {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #52503B;
+  margin-left: 16px;
+}
+.advantage__content-pic {
+  width: 36px;
+  height: 36px;
+}/*# sourceMappingURL=advantage.css.map */

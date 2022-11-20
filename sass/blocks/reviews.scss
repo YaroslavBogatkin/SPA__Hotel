@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
+
+.reviews{
+    background-color:#FAF8F0;
+
+    &__title{
+        padding-top: 136px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: #52503B;
+    }
+
+    &__descr{
+        margin-top: 14px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #52503B;
+    }
+
+    &__review{
+        display: flex;
+        margin-left: 136px;
+        margin-top: 30px;
+    }
+
+    &__content{
+        background-color: #ffff;
+        width: 584px;
+        margin-right: 20px;
+        margin-bottom: 131px;
+
+        &-stars{
+            margin-top: 33px;
+            margin-left: 31px;
+        }
+
+        &-title{
+            margin-top: 10px;
+            margin-left: 31px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #333333;
+        }
+
+        &-descr{
+            margin-top: 11px;
+            margin-left: 31px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+        }
+
+        &-name{
+            margin-top: 19px;
+            margin-left: 41px;
+            margin-bottom: 31px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+        }
+    }
+}
