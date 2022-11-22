@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
 
-.marketing{
-    background-color: #ffff;
-    display: flex;
+.container{
+    max-width: 1440px;
+}
 
-    &__tagline{
-        margin-top: 138px;
-        margin-left: 136px;
-    }
+.advantage{
+    width: 100%;
+    background-color: #ffff;
 
     &__title{
         font-family: 'Montserrat';
@@ -16,37 +15,42 @@
         font-size: 32px;
         line-height: 36px;
         color: #52503B;
+        margin-top: 138px;
+        margin-left: 136px;
     }
 
     &__descr{
-        width: 514px;
+        width: 554px;
+        margin-top: 14px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #52503B;
-        margin-top: 14px;
-        margin-bottom: 130px;
+        margin-left: 136px;
     }
 
-    &__advantage{
-        margin-top: 101px;
-        margin-left: 105px;
+    &__content{
+        margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
-        
 
         &-items{
-            width: 260px;
             display: flex;
-            margin-right: 37px; 
-            
+            margin-left: 136px;
+            width: 548px;
+            margin-bottom: 50px;
         }
-        &-logo{
-            width: 36px;
-            height: 35px;
-            margin-right: 16px;
+
+        &-title{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #52503B;
+            margin-left: 16px;
         }
 
         &-descr{
@@ -55,7 +59,15 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
-            color: #333333;
+            color: #52503B;
+            margin-left: 16px;
+        }
+
+        &-pic{
+            width: 36px;
+            height: 36px;
         }
     }
+
+
 }

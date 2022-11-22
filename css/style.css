@@ -9,11 +9,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
 .container {
-  width: 1440px;
+  max-width: 1440px;
 }
 
 .header {
-  max-width: 1440px;
+  width: 100%;
   height: 80px;
   background-color: #52503B;
 }
@@ -65,8 +65,16 @@
   text-shadow: 0.1px 0.2px #FFFFFF;
 }
 
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
+}
+
 .main {
-  width: 1440px;
+  width: 100%;
   height: 720px;
   background-image: url(../images/1.png);
   background-repeat: no-repeat;
@@ -103,8 +111,12 @@
   margin-top: 34px;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .promo {
-  width: 1440px;
+  width: 100%;
   height: 410px;
   background-color: #FAF8F0;
 }
@@ -154,7 +166,12 @@
   color: white;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .alert {
+  width: 100%;
   background-color: #FFFFFF;
   align-items: center;
 }
@@ -171,7 +188,12 @@
   margin-bottom: 140px;
 }
 
+.container {
+  max-width: 1140px;
+}
+
 .room {
+  width: 100%;
   background-color: #FAF8F0;
   display: flex;
   flex-direction: column;
@@ -235,7 +257,12 @@
   margin-bottom: 99px;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .advantage {
+  width: 100%;
   background-color: white;
 }
 .advantage__title {
@@ -293,7 +320,12 @@
   height: 36px;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .reviews {
+  width: 100%;
   background-color: #FAF8F0;
 }
 .reviews__title {
@@ -363,7 +395,12 @@
   color: #333333;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .marketing {
+  width: 100px;
   background-color: white;
   display: flex;
 }
@@ -415,7 +452,12 @@
   color: #333333;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .order {
+  width: 100%;
   background-color: #faf8f0;
   display: flex;
   flex-direction: column;
@@ -484,7 +526,12 @@
   color: white;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .footer {
+  width: 100%;
   background-color: #52503B;
   height: 608px;
 }
@@ -600,6 +647,7 @@
 li {
   cursor: pointer;
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 li:hover {
