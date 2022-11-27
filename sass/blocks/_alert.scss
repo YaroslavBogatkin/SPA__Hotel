@@ -1,16 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
-
-.container{
-    max-width: 1440px;
-}
 
 .alert{
-    width: 100%;
-    background-color: #FFFFFF;
+    background-color: $background-white;
     align-items: center;
 
     &__descr{
-        width: 1287px;
+        max-width: 1287px;
+        width: 100%;
         margin-top: 140px;
         font-family: 'Montserrat';
         font-style: normal;

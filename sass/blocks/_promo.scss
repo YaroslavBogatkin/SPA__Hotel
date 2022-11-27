@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
-
-.container{
-    max-width: 1440px;
-}
-
 .promo{
-    width: 100%;
+    width: 1440px;
     height: 410px;
-    background-color: #FAF8F0;
+    background-color: $background-grey;
     
     &__content{
         display: flex;

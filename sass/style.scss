@@ -1,4 +1,10 @@
+@import './base/reset';
+@import './base/base';
+@import './base/mixin';
+
+
 @import 'blocks/_header.scss';
+@import 'blocks/_navigation.scss';
 @import 'blocks/_main.scss';
 @import 'blocks/_promo.scss';
 @import 'blocks/_alert.scss';

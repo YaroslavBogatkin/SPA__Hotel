@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
-
-.container{
-    max-width: 1440px;
-}
-
 .reviews{
-    width: 100%;
-    background-color:#FAF8F0;
+    background-color:$background-grey;
+
+    &__inner{
+        padding-top: 138px;
+    }
 
     &__title{
-        padding-top: 136px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -32,7 +28,6 @@
 
     &__review{
         display: flex;
-        margin-left: 136px;
         margin-top: 30px;
     }
 
@@ -43,6 +38,7 @@
         margin-bottom: 131px;
 
         &-stars{
+            display: flex;
             margin-top: 33px;
             margin-left: 31px;
         }

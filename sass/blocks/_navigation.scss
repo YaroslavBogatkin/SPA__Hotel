@@ -1,0 +1,23 @@
+.navigation {
+	&__list {
+		display: flex;
+
+		&-item {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		&-item:not(:last-child) {
+			margin-right: 24px;
+		}
+
+		&-link {
+			font-size: 14px;
+			line-height: 20px;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+	}
+
+}

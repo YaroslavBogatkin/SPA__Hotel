@@ -1,0 +1,39 @@
+@mixin footer__btn {
+                border: 1px solid #52503B;
+				border-radius: 10px;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: #52503B;
+				position: relative;
+				padding: 5px 5px 5px 5px;
+				position: relative;
+				right: 73px;
+
+				&:hover {
+					background-color: #52503B;
+					color: #FFFFFF;
+				}
+}
+
+@mixin buttons {
+        width: 116px;
+        height: 52px;
+        border: 4px solid #52503B;
+        border-radius: 6px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #52503B;
+    
+        &:hover {
+            background-color: #52503B;
+            color: #FFFFFF;
+        }
+    
+}

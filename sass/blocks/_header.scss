@@ -1,70 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
 
-.container{
-    max-width: 1440px;
+.header {
+	width: 100%;
+	background-color: $header-color;
+	position: fixed;
+
+	&__content {
+		padding: 18px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+
+	&__button {
+		@include buttons;
+	}
 }
 
-.header{
-    width: 100%;
-    height: 80px;
-    background-color: #52503B;
-    
-    &__content{
-        display: flex;
-        
-    }
-
-    &__list{
-        text-decoration: none;
-        display: flex;
-        margin-top: 30px;
-        margin-left: 419px ;
-
-        &-item{
-            text-decoration: none;
-            margin-right: 24px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            color: #FFFFFF;
-
-        }
-    }
-
-    &__logo{
-        margin-left: 120px;
-        margin-top: 19px;
-       
-    }
-
-    &__button{
-        width: 117px;
-        height: 42px;
-        background: #FFFFFF;
-        border: none;
-        border-radius: 6px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        color: #52503B;
-        margin-top: 19px;
-        margin-left: 368px; 
-    }
+.navigation__list-item{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
 }
 
-.header__button:hover{
-    background-color:#7c7419;
-    color: #FFFFFF;
+.header__button:hover {
+	background-color: #7c7419;
+	color: #FFFFFF;
 }
 
-.header__list-item:hover{
-    text-shadow: 0.1px 0.2px #FFFFFF;
-}
-
-li{
-    list-style-type: none;
+.navigation__list-item:hover {
+	text-shadow: 0.1px 0.2px #ffffff;
 }

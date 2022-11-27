@@ -1,59 +1,364 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type=radio] {
+  vertical-align: text-bottom;
+}
+
+input[type=checkbox] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type=checkbox] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+img {
+  display: block;
+}
+
 .container {
-  max-width: 1440px;
+  max-width: 1218px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header {
   width: 100%;
-  height: 80px;
   background-color: #52503B;
+  position: fixed;
 }
 .header__content {
+  padding: 18px 0;
   display: flex;
-}
-.header__list {
-  text-decoration: none;
-  display: flex;
-  margin-top: 30px;
-  margin-left: 419px;
-}
-.header__list-item {
-  text-decoration: none;
-  margin-right: 24px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-.header__logo {
-  margin-left: 120px;
-  margin-top: 19px;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__button {
-  width: 117px;
-  height: 42px;
-  background: #FFFFFF;
-  border: none;
+  width: 116px;
+  height: 52px;
+  border: 4px solid #52503B;
   border-radius: 6px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: #52503B;
-  margin-top: 19px;
-  margin-left: 368px;
+}
+.header__button:hover {
+  background-color: #52503B;
+  color: #FFFFFF;
+}
+
+.navigation__list-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .header__button:hover {
@@ -61,32 +366,47 @@
   color: #FFFFFF;
 }
 
-.header__list-item:hover {
-  text-shadow: 0.1px 0.2px #FFFFFF;
+.navigation__list-item:hover {
+  text-shadow: 0.1px 0.2px #ffffff;
 }
 
-li {
-  list-style-type: none;
+.navigation__list {
+  display: flex;
 }
-
-.container {
-  max-width: 1440px;
+.navigation__list-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+}
+.navigation__list-item:not(:last-child) {
+  margin-right: 24px;
+}
+.navigation__list-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .main {
   width: 100%;
-  height: 720px;
+  display: block;
   background-image: url(../images/1.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main__inner {
+  min-height: calc(100vh + 85px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .main__logo {
+  display: block;
   width: 256px;
   height: 90px;
-  margin-top: 178px;
+  margin: 0 auto;
 }
 .main__title {
   width: 1170px;
@@ -109,14 +429,11 @@ li {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 34px;
-}
-
-.container {
-  max-width: 1440px;
+  text-align: center;
 }
 
 .promo {
-  width: 100%;
+  width: 1440px;
   height: 410px;
   background-color: #FAF8F0;
 }
@@ -166,17 +483,13 @@ li {
   color: white;
 }
 
-.container {
-  max-width: 1440px;
-}
-
 .alert {
-  width: 100%;
   background-color: #FFFFFF;
   align-items: center;
 }
 .alert__descr {
-  width: 1287px;
+  max-width: 1287px;
+  width: 100%;
   margin-top: 140px;
   font-family: "Montserrat";
   font-style: normal;
@@ -188,16 +501,8 @@ li {
   margin-bottom: 140px;
 }
 
-.container {
-  max-width: 1140px;
-}
-
 .room {
-  width: 100%;
   background-color: #FAF8F0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .room__title {
   font-family: "Montserrat";
@@ -210,7 +515,7 @@ li {
   padding-top: 138px;
 }
 .room__descr {
-  width: 554px;
+  max-width: 554px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -218,12 +523,13 @@ li {
   line-height: 24px;
   text-align: center;
   color: #52503B;
-  margin-top: 14px;
+  margin: 14px auto;
 }
 .room__content {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 .room__content-items {
   text-align: center;
@@ -233,7 +539,7 @@ li {
 .room__content-logo {
   align-items: center;
   text-align: center;
-  margin-top: 30px;
+  margin: 0 auto;
 }
 .room__content-title {
   font-family: "Montserrat";
@@ -257,13 +563,11 @@ li {
   margin-bottom: 99px;
 }
 
-.container {
-  max-width: 1440px;
-}
-
 .advantage {
-  width: 100%;
   background-color: white;
+}
+.advantage__inner {
+  margin-top: 136px;
 }
 .advantage__title {
   font-family: "Montserrat";
@@ -272,8 +576,6 @@ li {
   font-size: 32px;
   line-height: 36px;
   color: #52503B;
-  margin-top: 138px;
-  margin-left: 136px;
 }
 .advantage__descr {
   width: 554px;
@@ -284,7 +586,6 @@ li {
   font-size: 16px;
   line-height: 24px;
   color: #52503B;
-  margin-left: 136px;
 }
 .advantage__content {
   margin-top: 30px;
@@ -293,7 +594,6 @@ li {
 }
 .advantage__content-items {
   display: flex;
-  margin-left: 136px;
   width: 548px;
   margin-bottom: 50px;
 }
@@ -320,16 +620,13 @@ li {
   height: 36px;
 }
 
-.container {
-  max-width: 1440px;
-}
-
 .reviews {
-  width: 100%;
   background-color: #FAF8F0;
 }
+.reviews__inner {
+  padding-top: 138px;
+}
 .reviews__title {
-  padding-top: 136px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -350,7 +647,6 @@ li {
 }
 .reviews__review {
   display: flex;
-  margin-left: 136px;
   margin-top: 30px;
 }
 .reviews__content {
@@ -360,6 +656,7 @@ li {
   margin-bottom: 131px;
 }
 .reviews__content-stars {
+  display: flex;
   margin-top: 33px;
   margin-left: 31px;
 }
@@ -395,18 +692,15 @@ li {
   color: #333333;
 }
 
-.container {
-  max-width: 1440px;
-}
-
 .marketing {
-  width: 100px;
   background-color: white;
   display: flex;
 }
-.marketing__tagline {
+.marketing__inner {
+  display: flex;
+  justify-content: space-between;
   margin-top: 138px;
-  margin-left: 136px;
+  margin-bottom: 130px;
 }
 .marketing__title {
   font-family: "Montserrat";
@@ -425,18 +719,17 @@ li {
   line-height: 24px;
   color: #52503B;
   margin-top: 14px;
-  margin-bottom: 130px;
 }
 .marketing__advantage {
-  margin-top: 101px;
-  margin-left: 105px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 55px;
 }
 .marketing__advantage-items {
   width: 260px;
   display: flex;
   margin-right: 37px;
+  margin-bottom: 59px;
 }
 .marketing__advantage-logo {
   width: 36px;
@@ -452,13 +745,15 @@ li {
   color: #333333;
 }
 
-.container {
-  max-width: 1440px;
-}
-
 .order {
-  width: 100%;
   background-color: #faf8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order .order__inner {
+  padding-top: 138px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -468,7 +763,6 @@ li {
 }
 .order__title {
   width: 533px;
-  padding-top: 138px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -501,8 +795,11 @@ li {
   text-align: center;
   color: #52503B;
   margin-top: 18px;
-  margin-bottom: 100px;
   margin-right: 20px;
+}
+.order__contact:hover {
+  background-color: #52503B;
+  color: #FFFFFF;
 }
 .order__book {
   width: 116px;
@@ -517,7 +814,10 @@ li {
   text-align: center;
   color: #52503B;
   margin-top: 18px;
-  margin-bottom: 100px;
+}
+.order__book:hover {
+  background-color: #52503B;
+  color: #FFFFFF;
 }
 
 .order__contact:hover, .order__book:hover {
@@ -526,19 +826,16 @@ li {
   color: white;
 }
 
-.container {
-  max-width: 1440px;
-}
-
 .footer {
-  width: 100%;
   background-color: #52503B;
   height: 608px;
 }
+.footer__inner {
+  padding-top: 110px;
+}
 .footer__section {
   display: flex;
-  padding-top: 100px;
-  margin-left: 136px;
+  justify-content: space-between;
 }
 .footer__section-descr {
   font-family: "Montserrat";
@@ -551,7 +848,6 @@ li {
 }
 .footer__section-social {
   width: 136px;
-  margin-left: 238px;
 }
 .footer__section-social_title {
   font-family: "Montserrat";
@@ -564,11 +860,11 @@ li {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+.footer__section-social_icons {
+  display: flex;
+}
 .footer__section-social_icon {
   margin-right: 16px;
-}
-.footer__section-submit {
-  margin-left: 167px;
 }
 .footer__section-submit_input {
   width: 576px;
@@ -617,10 +913,14 @@ li {
   position: relative;
   right: 73px;
 }
+.footer__section-submit_button:hover {
+  background-color: #52503B;
+  color: #FFFFFF;
+}
 .footer__logo {
   width: 200px;
   height: 70px;
-  margin: 48px 0 20px 620px;
+  margin: 48px auto 20px auto;
 }
 .footer__rights {
   font-family: "Montserrat";
@@ -641,20 +941,11 @@ li {
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 110px;
 }
-
-li {
+.footer li {
   cursor: pointer;
   margin-bottom: 10px;
-  list-style-type: none;
 }
-
-li:hover {
+.footer li:hover {
   text-shadow: 0.1px 0.2px #FFFFFF;
-}
-
-.footer__section-submit_button:hover {
-  background-color: #52503B;
-  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
